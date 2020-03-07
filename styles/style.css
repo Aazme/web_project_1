@@ -93,22 +93,18 @@
 
 .two-columns__main-text {
     margin: auto;
+    margin-right: 0px;
     width: 80%;
     min-width: 784px;
     line-height: 34px;
     font-size: 24px;
+    justify-content: space-between;
 }
 
-.two-columns__main-text_font-bold {
-    font-weight: bold;
-}
-
-
-.two-columns__main-text_space-bottom {
+.two-columns__paragraph:not(:last-of-type){
     margin-bottom: 30px;
+
 }
-
-
 
 .digits {
     margin: 100px auto;
@@ -136,17 +132,21 @@
 .table {
     display: flex;
     width: 1100px;
-    margin: auto;
     justify-content: space-between;
-
-
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 .table__cell {
+    margin-top: 60px;
     width: 250px;
+    max-width: 250px;
+    min-width: 200px;
+
 }
 
 .table__heading {
+    margin-top: 0px;
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
@@ -156,7 +156,7 @@
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
-
+    margin-top: 20px;
 }
 
 
@@ -164,9 +164,7 @@
     margin-top: 60px;
 }
 
-.table__text_space-top {
-    margin-top: 20px;
-}
+
 
 .feynman {
     z-index: 1;
@@ -228,21 +226,14 @@
 }
 .section-title_theme_dark{
     color: white;
-    line-height: 69px;
-    font-size: 60px;
-    font-weight: bold;
 
 }
 .section-title_theme_dark_space_top{
     margin-top: 20px;
 }
 .section-subtitle_theme_dark{
-    margin: auto;
-    text-align: center;
+    margin-top: 20px;
     color: white;
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
 }
 
 .kaufman__triangle{
@@ -253,14 +244,24 @@
     height: 877px;
 }
 /* including elements with key-value modifiers */
+.table_dark_theme{
+    z-index:1;
+    position: relative;
+    }
 .table__cell_theme_dark {
     z-index: 1;
     width: 200px;
-    color: white;
     margin-right: 0;
     margin-top: 80px;
 }
 
+.table__heading_theme_dark{
+    color:white;
+}
+
+.table__text_theme_dark{
+    color:white;
+}
 
 .footer{
     background-color: #1f1f1f;
@@ -281,7 +282,7 @@
     margin:auto;
 }
 
-.footer__column_content-copyright{
+.footer__column_content_copyright{
     display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -313,7 +314,7 @@ flex-direction: column;
     font-size: 18px;
     font-weight: normal;
 }
-.footer__column-links_space_bottom{
+.footer__column-links{
     margin-bottom: 16px;
 }
 
