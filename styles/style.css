@@ -20,9 +20,11 @@
     /* parameters for the header section */
 }
 
-.logo_place_header {
+.logo {
     width: 154px;
     height: 31px;
+}
+.logo_place_header {
     z-index: 1;
     position: absolute;
     top: 30px;
